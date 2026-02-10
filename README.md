@@ -1,109 +1,109 @@
-##🔐 Public Key Cryptography (PKI)
+# 🔐 Public Key Cryptography (PKI)
 
-Public Key Cryptography, also known as Public Key Infrastructure (PKI), is a security system that enables safe and trusted communication over public networks such as the Internet 🌐.
-It plays a critical role in protecting sensitive data and verifying digital identities in modern applications.
+Public Key Cryptography, also known as **Public Key Infrastructure (PKI)**, is a security system that enables **safe and trusted communication** over public networks such as the Internet 🌐.  
+It plays a critical role in **protecting sensitive data** and **verifying digital identities** in modern applications.
 
-📌 What is Cryptography?
+---
 
-Cryptography is the practice of securing information by converting readable data into an unreadable format 🔒.
-Only authorized parties can access and interpret the original data, ensuring privacy, confidentiality, and data protection.
+## 📌 What is Cryptography?
 
-🏗️ What is Public Key Infrastructure (PKI)?
+Cryptography is the practice of securing information by converting **readable data into an unreadable format** 🔒.  
+Only authorized parties can access and interpret the original data, ensuring **privacy, confidentiality, and data protection**.
+
+---
+
+## 🏗️ What is Public Key Infrastructure (PKI)?
 
 PKI is a complete security framework composed of:
 
-Hardware 🖥️
+- **Hardware** 🖥️  
+- **Software** 💻  
+- **Policies** 📜  
+- **Procedures** ⚙️  
 
-Software 💻
+Together, these components manage **digital certificates** and **public-key encryption**, ensuring communication is both **secure and authenticated**.
 
-Policies 📜
+---
 
-Procedures ⚙️
+## 🔑 Asymmetric Cryptography
 
-Together, these components manage digital certificates and public-key encryption, ensuring communication is both secure and authenticated.
+PKI is based on **asymmetric cryptography**, which uses a pair of cryptographic keys:
 
-🔑 Asymmetric Cryptography
+- **Public Key** 🔓  
+  - Shared openly  
+  - Used to encrypt data  
 
-PKI is based on asymmetric cryptography, which uses a pair of cryptographic keys:
+- **Private Key** 🔐  
+  - Kept secret by the owner  
+  - Used to decrypt data  
 
-Public Key 🔓
+➡️ Data encrypted using a public key can only be decrypted with the corresponding private key, ensuring **confidentiality**.
 
-Shared openly
+---
 
-Used to encrypt data
+## 🪪 Digital Certificates
 
-Private Key 🔐
+Digital certificates function as **digital identity cards** 🆔.
 
-Kept secret by the owner
+- Bind a public key to an **entity** (user, device, or application)  
+- Follow the **X.509 standard**  
+- Help verify the authenticity of communication partners  
 
-Used to decrypt data
+---
 
-➡️ Data encrypted using a public key can only be decrypted with the corresponding private key, ensuring confidentiality.
+## 🏛️ Core Components of PKI
 
-🪪 Digital Certificates
+### 🏷️ Certificate Authority (CA)
+- Trusted third party  
+- Issues, signs, and manages digital certificates  
 
-Digital certificates function as digital identity cards 🆔.
+### 🧾 Registration Authority (RA)
+- Verifies user identities  
+- Approves certificate requests before CA issuance  
 
-Bind a public key to an entity (user, device, or application)
+### 🔄 Key Management
+- Secure key generation  
+- Safe storage and distribution  
+- Key revocation when compromised or expired  
 
-Follow the X.509 standard
+---
 
-Help verify the authenticity of communication partners
+## ✅ Benefits of PKI
 
-🏛️ Core Components of PKI
-🏷️ Certificate Authority (CA)
+- **Enhanced Security** 🛡️  
+  Protects sensitive data and prevents Man-in-the-Middle (MITM) attacks  
 
-Trusted third party
+- **Authentication** 👤  
+  Verifies users and devices before granting access  
 
-Issues, signs, and manages digital certificates
+- **Scalability & Compliance** 📈  
+  Supports large organizations and regulatory standards such as **GDPR**
 
-🧾 Registration Authority (RA)
+---
 
-Verifies user identities
+## ⚠️ Limitations of PKI
 
-Approves certificate requests before CA issuance
+- **Complexity**  
+  PKI systems can be difficult to set up and manage  
 
-🔄 Key Management
+- **Trust Dependency**  
+  Security depends heavily on the reliability of the Certificate Authority  
 
-Secure key generation
+- **Private Key Compromise**  
+  If a private key is stolen, the associated security becomes invalid  
 
-Safe storage and distribution
+---
 
-Key revocation when compromised or expired
+## 🌍 Real-World Applications
 
-✅ Benefits of PKI
+- Secure websites using **HTTPS / SSL / TLS** 🌐  
+- **Online banking** and **e-commerce** platforms 💳  
+- Secure email communication 📧  
+- Authentication systems such as **VPNs** and **cloud services** 🔑  
 
-Enhanced Security 🛡️
-Protects sensitive data and prevents Man-in-the-Middle (MITM) attacks
+---
 
-Authentication 👤
-Verifies users and devices before granting access
+## 🧠 Summary
 
-Scalability & Compliance 📈
-Supports large organizations and regulatory standards such as GDPR
-
-⚠️ Limitations of PKI
-
-Complexity
-PKI systems can be difficult to set up and manage
-
-Trust Dependency
-Security depends heavily on the reliability of the Certificate Authority
-
-Private Key Compromise
-If a private key is stolen, the associated security becomes invalid
-
-🌍 Real-World Applications
-
-Secure websites using HTTPS / SSL / TLS 🌐
-
-Online banking and e-commerce platforms 💳
-
-Secure email communication 📧
-
-Authentication systems such as VPNs and cloud services 🔑
-
-🧠 Summary
-
-Public Key Infrastructure is a foundational technology in modern cybersecurity.
-It ensures confidentiality, authentication, and trust in digital communication, making the internet safer for both users and organizations.
+Public Key Infrastructure is a **foundational technology in modern cybersecurity**.  
+It ensures **confidentiality, authentication, and trust** in digital communication, making the internet safer for users and organizations alike.
